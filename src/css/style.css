@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('../fonts/Roboto-Regular.ttf');
+    }
+
+body {
+    font-size: 18px;
+    line-height: 1,5;
+    color: #cacaca;
+    background: #08020d;
+}    

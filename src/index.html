@@ -1,12 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портал «Music Box» ilya_koder_2000</title>
+    <link rel="stylesheet" href="reset/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <header class="header container">
+        <div class="header-wrapper">
+            <div class="logo-nav-wrapper">
+                <div class="logo">
+                    <img src="images/logo.svg" alt="music-logo" class="logo__icon">
+                    <a href="#" class="logo__name">music Box</a>
+                </div>     
+                <ul class="nav">
+                    <li class="nav__item"><a href="#">главная</a></li>
+                    <li class="nav__item"><a href="#">каталог</a></li>
+                    <li class="nav__item"><a href="#">исполнители</a></li>
+                    <li class="nav__item not-for-this"><a href="#">контакты</a></li>
+                </ul>
+            </div>
+            <form class="search">
+                <label>
+                    <input type="text" placeholder="поиск..." class="search__input">
+                </label>
+            </form> 
+        </div>         
+    </header>
+    <section class="page-description">
+        <div class="page-description-wrapper">
+            <h1 class="header-title">Онлайн музыка где угодно</h1>
+            <h2 class="header-subtitle">Без ограничений</h2>
+            <p class="form-info">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
+            <form class="subscription-form">
+                <label for="subscription-name">
+                    <input id="subscription-name" type="text" placeholder="Имя" class="subscription-form__name subscription-form__place">
+                </label>
+                <label for="subscription-email">
+                    <input id="subscription-Email" type="text" placeholder="Email" class="subscription-form__place">
+                </label>
+                <button type="submit" class="subscription-form__btn">получить доступ</button>
+            </form>
+        </div>
+    </section>
 </body>
 </html>

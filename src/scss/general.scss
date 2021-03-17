@@ -1,0 +1,61 @@
+
+
+@font-face {
+    font-weight: 400; /* Соответствует значению normal */
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-weight: 700; /* Соответствует значению bold */
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto/Roboto-Bold.ttf");
+}
+
+body {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: $main-color;
+    background-color: $background-color;
+}
+
+a {
+    text-decoration: none;
+    color: $main-color;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 90px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    @media (max-width: $screen-lg) {
+        font-size: 30px;
+        line-height: 45px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+h2 {
+    font-size: 38px;
+    line-height: 57px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    @media (max-width: $screen-lg) {
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+.container {
+    @media (min-width: $screen-lg) {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}

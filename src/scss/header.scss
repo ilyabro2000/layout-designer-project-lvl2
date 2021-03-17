@@ -1,0 +1,76 @@
+.header {
+    position: relative;
+    .header-wrapper {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        top: 22px;
+        height: 25px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+
+        .logo-nav-wrapper {
+            display: flex;
+            width: 530px;
+            height: 24px;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+
+            .logo {
+                &__icon {
+                    width: 24px;
+                    height: 24px;
+                    margin-right: 13px;
+                    vertical-align: center;
+                }
+                &__name {
+                    font-family: 'Roboto';
+                    font-size: $text-size-sm;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    color: $white;
+                }
+            }
+
+            .nav {
+                display: flex;
+                margin: 0;
+                padding: 0;
+                
+
+                &__item {
+                    margin-right: 25px;
+
+                    a {
+                    font-family: 'Roboto';
+                    font-size: $text-size-sm;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    color: $white;
+                    }
+                }
+            }
+        }
+        .search {
+            padding: 0;
+            margin: 0;
+            &__input {
+                width: 240px;
+                height: 26px;
+                border: none;
+                padding: 0;
+                border-radius: 15px;
+                padding-left: 10px;
+                background: $dark;
+                color: $main-color;
+                font-family: 'Roboto';
+                font-size: $text-size-md;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
